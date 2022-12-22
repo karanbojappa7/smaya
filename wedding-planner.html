@@ -13,7 +13,48 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="style_sheets/style.css">
+
+    <link
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     
+
+        <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+    </style>
 </head>
 
 <body>
@@ -129,22 +170,141 @@
 
     </section>
 
-<section id="wedp3"> 
+<section id="wedp3" class="bgc1"> 
       <div class="content">
       <div class="c1 head">Services</div>
       <p class="subhead c1"> Some of our services<div class="line mx-auto"></div></p>
     </div>
     <div class="container">
       <div class="row">
-        
+         <div class="swiper mySwiper" style="z-index:5">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="style_sheets/pictures/pic1.jpg" />
+          <h6 class="text-center c8 pt-2">Entertainment</h6>
+          <p class="col-sm-11 text-center">Want to go an extra mile to make your guests remember your wedding. </p>
+        </div>
+        <div class="swiper-slide">
+          <img src="style_sheets/pictures/pic2.jpg" />
+                    <h6 class="text-center c8 pt-2">Wedding Decor</h6>
+          <p class="col-sm-11 text-center">Want to go an extra mile to make your guests remember your wedding. </p>
+
+        </div>
+        <div class="swiper-slide">
+          <img src="style_sheets/pictures/pic3.jpg" />
+                    <h6 class="text-center c8 pt-2">Photography & Cinematography</h6>
+          <p class="col-sm-11 text-center">Want to go an extra mile to make your guests remember your wedding. </p>
+
+        </div>
+        <div class="swiper-slide">
+          <img src="style_sheets/pictures/pic4.jpg" />
+                    <h6 class="text-center c8 pt-2">Hospitality & Logistics</h6>
+          <p class="col-sm-11 text-center">Want to go an extra mile to make your guests remember your wedding. </p>
+
+        </div>
+        <div class="swiper-slide">
+          <img src="style_sheets/pictures/pic5.jpg" />
+                    <h6 class="text-center c8 pt-2">Venue Selection</h6>
+          <p class="col-sm-11 text-center">Want to go an extra mile to make your guests remember your wedding. </p>
+
+        </div>
+        <div class="swiper-slide">
+          <img src="style_sheets/pictures/pic6.jpg" />
+                    <h6 class="text-center c8 pt-2">Wedding Stationary</h6>
+          <p class="col-sm-11 text-center">Want to go an extra mile to make your guests remember your wedding. </p>
+
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
       </div>
     </div>
 </section>
 
-<section id="wedp4"></section>
+<section id="wedp4">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          
+          <div class="contactbox">
+            <div class="head text-center">Book Now</div>
+            <form class="p-5">
+
+              <div class="col-sm-12">
+                <label>Name:</label><br>
+                <input type="text" >
+              </div>
+              <div class="col-sm-12">
+                <label>Name:</label><br>
+                <input type="text" >
+              </div>
+              <div class="col-sm-12">
+                <label>Name:</label><br>
+                <input type="text" >
+              </div>
+              <div class="col-sm-12">
+                <label>Name:</label><br>
+                <input type="text" >
+              </div>
+              <div class="col-sm-12">
+                <label>Name:</label><br>
+                <input type="text" >
+              </div>
+              <input type="button" class="mt-3 btn btn-primary" value="Request a Quote">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</section>
 
 
+<footer class="p-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="c4 pt-5">Thoughtful Thoughts to your inbox</div>
 
+                <input type="email" class="col-sm-6 input" name="">
+
+            </div>
+            <div class="col-sm-5 offset-1">
+                <img src="style_sheets/pictures/foot.png" width="100%">
+            </div>
+        </div>
+<div class="text-center cpy">Copyright © 2022 by Smaya Studios. All Rights Reserved.</div>
+
+    </div>
+</footer>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        loop:true,
+        autoplay:{
+          delay:2500,
+          disableOnInteraction: false,
+        },
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
 <script type="text/javascript">
   $(document).ready(function(){
       $(window).scroll(function() {
