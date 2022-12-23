@@ -17,10 +17,6 @@
     <link
   rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    
-
         <style>
       html,
       body {
@@ -54,6 +50,12 @@
         display: block;
         width: 100%;
       }
+
+      .navbar{
+  background-color: transparent;
+}
+
+
     </style>
 </head>
 
@@ -110,7 +112,7 @@
   </div>
 </nav>
 
-    <nav class="navbarsm">
+    <nav class="navbarsm  d-block d-sm-none">
         <div id="mainbox" onclick="openFunction()">&#9776;</div>
         <div id="menu" class="sidemenu">
             <a href="index.html" id="link1" class="fon1">Home</a>
@@ -234,16 +236,18 @@
             <div class="head text-center">Book Now</div>
             <form class="p-5 col-sm-12 cusform">
 
-                <label>Name:</label><br>
-                <input type="text" class="col-sm-12 ">
-                <label>Name:</label><br>
-                <input type="text" class="col-sm-12 " >
-                <label>Name:</label><br>
-                <input type="text" class="col-sm-12 " >
-                <label>Name:</label><br>
-                <input type="text" class="col-sm-12 " >
-                <label>Name:</label><br>
-                <button class="but">Request a Quote</button>
+                <!-- <label>Name:</label><br> -->
+                <input type="text" class="col-sm-12 " placeholder="Enter Name..">
+                <!-- <label>Name:</label><br> -->
+                <input type="text" class="col-sm-12 " placeholder="Enter Email..">
+                <!-- <label>Name:</label><br> -->
+                <input type="text" class="col-sm-12 " placeholder="Enter Phone number..">
+                <!-- <label>Name:</label><br> -->
+                <input type="text" class="col-sm-12 " placeholder="Enter Subject">
+
+                <textarea class="col-sm-12 pt-4 pb-4" cols="4" rows="3" placeholder="You're comments"></textarea>
+
+                <button class="but mt-3 mx-2">Request a Quote</button>
               </div>
               
             </form>
@@ -256,24 +260,56 @@
 </section>
 
 
-<footer class="p-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="c4 pt-5">Thoughtful Thoughts to your inbox</div>
-
-                <input type="email" class="col-sm-6 input" name="">
-
-            </div>
-            <div class="col-sm-5 offset-1">
-                <img src="style_sheets/pictures/foot.png" width="100%">
-            </div>
+  <footer class="footer">
+     <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+          </ul>
         </div>
-<div class="text-center cpy">Copyright © 2022 by Smaya Studios. All Rights Reserved.</div>
-
-    </div>
-</footer>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">wedding planner</a></li>
+            <li><a href="#">Photography</a></li>
+            <li><a href="#">etc.</a></li>
+            <li><a href="#">etc..</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+     </div>
+     <div class="text-center cpy">Copyright © 2022 by Smaya Studios. All Rights Reserved.</div>
+  </footer>
     <!-- Initialize Swiper -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
     <script>
       var swiper = new Swiper(".mySwiper", {
         effect: "coverflow",
