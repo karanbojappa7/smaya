@@ -12,8 +12,44 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="style_sheets/style.css">
     
+
+
+    <link rel="shortcut icon" href="https:/jthemes.net/themes/html/harmony-event/har/favicon.png">
+
+    <!-- fraimwork - css include -->
+    <link rel="stylesheet" type="text/css" href="har/bootstrap.min.css">
+
+    <!-- icon css include -->
+    <link rel="stylesheet" type="text/css" href="har/fontawesome-all.css">
+    <link rel="stylesheet" type="text/css" href="har/flaticon.css">
+
+    <!-- carousel css include -->
+    <link rel="stylesheet" type="text/css" href="har/slick.css">
+    <link rel="stylesheet" type="text/css" href="har/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="har/animate.css">
+    <link rel="stylesheet" type="text/css" href="har/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="har/owl.theme.default.min.css">
+
+    <!-- others css include -->
+    <link rel="stylesheet" type="text/css" href="har/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="har/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="har/calendar.css">
+
+
+    <link id="color_theme" rel="stylesheet" type="text/css" href="har/default.css">
+
+<link rel="stylesheet" type="text/css" href="style_sheets/style.css">
+
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- custom css include -->
+<!-- <link rel="stylesheet" type="text/css" href="har/style.css"> -->
+
+
+
+    
+
 </head>
 
 <body>
@@ -69,7 +105,7 @@
   </div>
 </nav>
 
-    <nav class="navbarsm d-block d-sm-none">
+    <nav class="navbarsm d-block d-xl-none">
         <div id="mainbox" onclick="openFunction()">&#9776;</div>
         <div id="menu" class="sidemenu">
             <a href="index.html" id="link1" class="fon1">Home</a>
@@ -83,11 +119,106 @@
             <div class="closebtn" onclick="closeFunction()">&times;</div>
         </div>
     </nav>
-    
-    <section id="sec"></section>
-    <section id="sec2"></section>
-    <section id="sec3"></section>
-    <section id="sec4"></section>
+    <!--     <section id="sec3"></section>
+    <section id="sec4"></section> -->
+
+
+
+
+
+
+
+
+
+
+
+ <section id="slide-section" class="slide-section clearfix">
+        <div id="main-carousel1" class="main-carousel1 owl-carousel owl-theme owl-loaded owl-drag">
+            <div class="owl-stage-outer">
+                <div class="owl-stage" style="transition: all 1s ease 0s; width: 11081px; transform: translate3d(-6332px, 0px, 0px);">
+                    <div class="owl-item cloned" style="width: 1583px;">
+                        <div class="item" style="background-image: url(style_sheets/pictures/slider-bg2.jpg);">
+                            <div class="overlay-black">
+                                <div class="container">
+                                    <div class="slider-item-content">
+
+                                        <span class="medium-text">one stop</span>
+                                        <h1 class="big-text">Event Planner</h1>
+                                        <small class="small-text">every event sould be perfect</small>
+
+                                        <div class="link-groups">
+                                            <a href="#" class="about-btn custom-btn">about us</a>
+                                            <a href="" class="start-btn">get started!</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 1583px;">
+                        <div class="item" style="background-image: url(style_sheets/pictures/slider-bg3.jpg);">
+                            <div class="overlay-black">
+                                <div class="container">
+                                    <div class="slider-item-content">
+
+                                        <span class="medium-text">one stop</span>
+                                        <h1 class="big-text">Event Planner</h1>
+                                        <small class="small-text">every event sould be perfect</small>
+                                        <div class="link-groups">
+                                            <a href="" class="about-btn custom-btn">about us</a>
+                                            <a href="" class="start-btn">get started!</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item" style="width: 1583px;">
+                        <div class="item" style="background-image: url(style_sheets/pictures/slider-bg1.jpg);">
+                            <div class="overlay-black">
+                                <div class="container">
+                                    <div class="slider-item-content">
+
+                                        <span class="medium-text">one stop</span>
+                                        <h1 class="big-text">Event Planner</h1>
+                                        <small class="small-text">every event sould be perfect</small>
+
+                                        <div class="link-groups">
+                                            <a href="" class="about-btn custom-btn">about us</a>
+                                            <a href="" class="start-btn">get started!</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div>
+        </div>
+    </section>
+
+
+
+<!-- <section id="sec2"></section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <footer class="footer">
@@ -225,6 +356,24 @@
 
         });
     </script>
+
+
+    <script type="text/javascript">
+  $(document).ready(function(){
+      $(window).scroll(function() {
+        var upbtn = $(window).scrollTop();
+        if (upbtn > 0) {
+            $(".navbar,.navbarsm").css("background", "#293241");
+
+            $(".navbar,.navbarsm").css("transition", ".5s");
+        } else {
+            $(".navbar,.navbarsm").css("background", "transparent");
+            $(".navbar,.navbarsm").css("transition", ".5s");
+        }
+            });
+  });
+
+</script>
     <!--  Preloader  -->
     <!--
     <script>
@@ -241,5 +390,42 @@
     </script>
 -->
     <!--  script's  -->
+
+    <!-- fraimwork - jquery include -->
+    <script src="har/jquery-3.3.1.min.js.download"></script>
+    <script src="har/popper.min.js.download"></script>
+    <script src="har/bootstrap.min.js.download"></script>
+
+    <!-- carousel jquery include -->
+    <script src="har/slick.min.js.download"></script>
+    <script src="har/owl.carousel.min.js.download"></script>
+
+    <!-- map jquery include -->
+    <script src="har/gmap3.min.js.download"></script>
+    <script src="har/js"></script>
+
+    <!-- calendar jquery include -->
+    <script src="har/atc.min.js.download"></script>
+
+    <!-- others jquery include -->
+    <script src="har/jquery.magnific-popup.min.js.download"></script>
+    <script src="har/isotope.pkgd.min.js.download"></script>
+    <script src="har/jarallax.min.js.download"></script>
+    <script src="har/jquery.mCustomScrollbar.concat.min.js.download"></script>
+
+    <!-- gallery img loaded - jqury include -->
+    <script src="har/imagesloaded.pkgd.min.js.download"></script>
+
+    <!-- multy count down - jqury include -->
+    <script src="har/jquery.countdown.js.download"></script>
+
+    <!-- color panal - jqury include -->
+
+    <!-- custom jquery include -->
+    <script src="har/custom.js.download"></script>
+
+
+
+
     <script type="text/javascript" src="scripts/main.js"></script>
 </body></html>
