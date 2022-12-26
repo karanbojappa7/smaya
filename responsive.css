@@ -1,6 +1,20 @@
-@media screen and (max-width: 1349px) {}
+@media screen and (max-width: 1349px) {
+            .about-section .about-item-wrapper ul li .about-item .title {
+        font-size: 14px;
+    }
+}
 
-@media screen and (max-width: 1199px) {}
+@media screen and (max-width: 1199px) {
+
+    .event-expertise-section .event-expertise-carousel .item .expertise-item .content {
+        z-index: 1;
+        left: 15px;
+        right: 15px;
+        bottom: -30px;
+        padding: 30px 15px;
+    }
+    
+}
 
 @media screen and (max-width: 991px) {
 
@@ -59,6 +73,22 @@
     .slide-section .main-carousel1 .item .slider-item-content .small-text {
         letter-spacing: 2px;
     }
+    .about-section .about-item-wrapper ul li {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-section .about-item-wrapper ul li .about-item .title {
+        font-size: 18px;
+    }
+
+        .homepage3 .event-expertise-section .link-btn {
+        padding: 0px;
+        margin-bottom: 50px;
+        text-align: center !important;
+    }
+
+
 
 }
 @media screen and (max-width: 320px) {
